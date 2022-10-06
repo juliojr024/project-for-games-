@@ -87,9 +87,12 @@
 					}
 				},
 				{
-					"id": "restart-layout",
+					"id": "go-to-nextprevious-layout",
 					"objectClass": "System",
-					"sid": 244171055993814
+					"sid": 628667079327534,
+					"parameters": {
+						"which": "previous"
+					}
 				}
 			],
 			"sid": 421125784538583
@@ -118,11 +121,14 @@
 					"sid": 765717121481587
 				},
 				{
-					"id": "go-to-nextprevious-layout",
-					"objectClass": "System",
-					"sid": 140739221181402,
+					"id": "spawn-another-object",
+					"objectClass": "enemy",
+					"sid": 891479467078500,
 					"parameters": {
-						"which": "previous"
+						"object": "enemyDeatsPraticos",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
 					}
 				}
 			],

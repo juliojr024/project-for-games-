@@ -23,6 +23,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "wrap",
 			"name": "Wrap",
@@ -79,12 +87,22 @@
 			"plaform",
 			"enemy",
 			"hitBox",
-			"enemy200"
+			"enemy200",
+			"hitbox200",
+			"enemyDeatsPraticos"
 		],
 		"subfolders": []
 	},
 	"autosaveData": null,
-	"containers": [],
+	"containers": [
+		{
+			"members": [
+				"enemy",
+				"hitBox"
+			],
+			"selectMode": "normal"
+		}
+	],
 	"families": {
 		"items": [],
 		"subfolders": []
