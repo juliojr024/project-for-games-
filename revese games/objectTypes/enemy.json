@@ -1,0 +1,65 @@
+{
+	"name": "enemy",
+	"plugin-id": "Sprite",
+	"sid": 395496298757205,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 485598368249128
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 954199904487167
+		},
+		{
+			"behaviorId": "wrap",
+			"name": "Wrap",
+			"sid": 276540412808954
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.488,
+						"originY": 0.504,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 611578,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.0030694580078125,
+								1,
+								0,
+								1,
+								0.99143212890625,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 946417453722488,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

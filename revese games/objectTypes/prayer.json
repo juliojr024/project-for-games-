@@ -1,0 +1,53 @@
+{
+	"name": "prayer",
+	"plugin-id": "Sprite",
+	"sid": 555186492319181,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "wrap",
+			"name": "Wrap",
+			"sid": 597237063861163
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 612913433063860
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 112263034058125
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9413329,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 471726204832883,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

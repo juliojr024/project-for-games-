@@ -1,0 +1,157 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "enemy",
+					"sid": 306428624496722,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 376679795254808
+				}
+			],
+			"actions": [
+				{
+					"id": "set-max-speed",
+					"objectClass": "enemy",
+					"sid": 717429594538398,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "40"
+					}
+				},
+				{
+					"id": "set-double-jump",
+					"objectClass": "enemy",
+					"sid": 820133478755956,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				}
+			],
+			"sid": 814615532664459
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 258831093791418
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "enemy",
+					"sid": 514371341185978,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				}
+			],
+			"sid": 807986711048917
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "prayer",
+					"sid": 447406880784105,
+					"parameters": {
+						"object": "enemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "prayer",
+					"sid": 301143148867622
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 932296676239011,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 244171055993814
+				}
+			],
+			"sid": 421125784538583
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hitBox",
+					"sid": 447652717760469,
+					"parameters": {
+						"object": "prayer"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "hitBox",
+					"sid": 764313909096036
+				},
+				{
+					"id": "destroy",
+					"objectClass": "enemy",
+					"sid": 765717121481587
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 140739221181402,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 183162644001500
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 750313174950700
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-object",
+					"objectClass": "hitBox",
+					"sid": 720995998127033,
+					"behaviorType": "MoveTo",
+					"parameters": {
+						"object": "enemy",
+						"image-point": "0",
+						"mode": "add-waypoint"
+					}
+				}
+			],
+			"sid": 865581624443020
+		}
+	],
+	"sid": 833108899549325
+}
