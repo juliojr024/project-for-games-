@@ -1,19 +1,14 @@
 {
-	"name": "enemy200",
+	"name": "hitbox200",
 	"plugin-id": "Sprite",
-	"sid": 497116135142694,
+	"sid": 445930004101611,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 792706788436111
-		},
-		{
-			"behaviorId": "wrap",
-			"name": "Wrap",
-			"sid": 746991857719135
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 136686810487539
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9116005,
+						"imageSpriteId": 2131787,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 643746630699714,
+				"sid": 354597735985940,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

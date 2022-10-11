@@ -1,19 +1,24 @@
 {
-	"name": "enemy200",
+	"name": "prayer",
 	"plugin-id": "Sprite",
-	"sid": 497116135142694,
+	"sid": 555186492319181,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 792706788436111
-		},
-		{
 			"behaviorId": "wrap",
 			"name": "Wrap",
-			"sid": 746991857719135
+			"sid": 597237063861163
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 612913433063860
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 112263034058125
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +34,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9116005,
+						"imageSpriteId": 9413329,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 643746630699714,
+				"sid": 471726204832883,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

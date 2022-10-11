@@ -1,19 +1,14 @@
 {
-	"name": "enemy200",
+	"name": "plaform",
 	"plugin-id": "Sprite",
-	"sid": 497116135142694,
+	"sid": 152659192887830,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "Platform",
-			"sid": 792706788436111
-		},
-		{
-			"behaviorId": "wrap",
-			"name": "Wrap",
-			"sid": 746991857719135
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 754570964819113
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +24,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9116005,
+						"imageSpriteId": 816565,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 643746630699714,
+				"sid": 676292064646785,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

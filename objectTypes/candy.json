@@ -1,19 +1,24 @@
 {
-	"name": "enemy200",
+	"name": "candy",
 	"plugin-id": "Sprite",
-	"sid": 497116135142694,
+	"sid": 823393524351996,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 997773175657186
+		},
+		{
 			"behaviorId": "Platform",
 			"name": "Platform",
-			"sid": 792706788436111
+			"sid": 701269749498712
 		},
 		{
 			"behaviorId": "wrap",
 			"name": "Wrap",
-			"sid": 746991857719135
+			"sid": 142598980730939
 		}
 	],
 	"effectTypes": [],
@@ -29,12 +34,12 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9116005,
+						"imageSpriteId": 7852881,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 643746630699714,
+				"sid": 489902943546915,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

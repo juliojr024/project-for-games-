@@ -1,0 +1,164 @@
+{
+	"name": "Event sheet 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 876684969427288
+				}
+			],
+			"actions": [
+				{
+					"id": "simulate-control",
+					"objectClass": "enemy",
+					"sid": 118330148419918,
+					"behaviorType": "Platform",
+					"parameters": {
+						"control": "left"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "enemy",
+					"sid": 651251140618120,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "100"
+					}
+				}
+			],
+			"sid": 163424282923197
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 467505714499983
+				}
+			],
+			"actions": [],
+			"sid": 511687742648671
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 444422997755870
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "hitBox",
+					"sid": 809125964298079,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "enemy",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 476604521784848
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "hitBox",
+					"sid": 131058246860088,
+					"parameters": {
+						"object": "prayer"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "hitBox",
+					"sid": 465552915818523
+				},
+				{
+					"id": "destroy",
+					"objectClass": "enemy",
+					"sid": 782435565166920
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "enemy",
+					"sid": 570667630304495,
+					"parameters": {
+						"object": "enemyDeatsPraticos",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 332861040607103,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "enemyDeatsPraticos",
+					"sid": 300302040011821
+				}
+			],
+			"sid": 857190572557926
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "prayer",
+					"sid": 162599291056502,
+					"parameters": {
+						"object": "enemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "prayer",
+					"sid": 848048194602357
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 367751912167965,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 714392722883107,
+					"parameters": {
+						"which": "previous"
+					}
+				}
+			],
+			"sid": 644123373860565
+		}
+	],
+	"sid": 394287361789502
+}
